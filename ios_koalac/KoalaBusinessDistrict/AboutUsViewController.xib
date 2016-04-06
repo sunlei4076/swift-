@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsViewController" customModule="KoalaBusinessDistrict" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="H8U-p5-I8n" id="h4Z-Mg-44f"/>
+                <outlet property="versionLabel" destination="ngO-Fi-PNz" id="1Cj-GV-VNV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhl-BU-YWu">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Set_AboutAppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="AWT-uM-EET">
+                            <rect key="frame" x="117" y="57" width="86" height="86"/>
+                            <animations/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngO-Fi-PNz">
+                            <rect key="frame" x="8" y="151" width="304" height="21"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ngO-Fi-PNz" firstAttribute="leading" secondItem="dhl-BU-YWu" secondAttribute="leading" constant="8" id="6cp-yA-Xk1"/>
+                        <constraint firstAttribute="centerY" secondItem="AWT-uM-EET" secondAttribute="centerY" id="Abd-bl-5Ua"/>
+                        <constraint firstAttribute="centerX" secondItem="AWT-uM-EET" secondAttribute="centerX" id="NcG-zK-X3v"/>
+                        <constraint firstAttribute="height" constant="200" id="cDd-gD-2EL"/>
+                        <constraint firstItem="ngO-Fi-PNz" firstAttribute="top" secondItem="AWT-uM-EET" secondAttribute="bottom" constant="8" id="fpH-HD-ThI"/>
+                        <constraint firstAttribute="trailing" secondItem="ngO-Fi-PNz" secondAttribute="trailing" constant="8" id="iCU-FX-I2f"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="H8U-p5-I8n">
+                    <rect key="frame" x="0.0" y="200" width="320" height="368"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="boJ-VT-Ntv"/>
+                        <outlet property="delegate" destination="-1" id="LlO-RW-2tr"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="H8U-p5-I8n" firstAttribute="top" secondItem="dhl-BU-YWu" secondAttribute="bottom" id="2hR-rb-ev0"/>
+                <constraint firstItem="dhl-BU-YWu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5oJ-oc-TY1"/>
+                <constraint firstAttribute="bottom" secondItem="H8U-p5-I8n" secondAttribute="bottom" id="7mG-vX-2NG"/>
+                <constraint firstAttribute="trailing" secondItem="H8U-p5-I8n" secondAttribute="trailing" id="Kue-kW-gLI"/>
+                <constraint firstItem="dhl-BU-YWu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gfZ-QV-1pJ"/>
+                <constraint firstItem="H8U-p5-I8n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kgr-XU-r2j"/>
+                <constraint firstAttribute="trailing" secondItem="dhl-BU-YWu" secondAttribute="trailing" id="qvy-ib-9zn"/>
+            </constraints>
+            <point key="canvasLocation" x="237" y="324"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Set_AboutAppIcon" width="86" height="86"/>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OC_SweepViewController">
+            <connections>
+                <outlet property="bottomBgView" destination="O6m-qT-NJn" id="JHx-qs-ONn"/>
+                <outlet property="sweepAreaView" destination="fw9-Qr-frH" id="Zcm-LC-NRf"/>
+                <outlet property="view" destination="ZPd-v1-RBB" id="vaP-mw-eQL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZPd-v1-RBB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="O6m-qT-NJn">
+                    <rect key="frame" x="0.0" y="371" width="320" height="197"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="Sweep_BG" translatesAutoresizingMaskIntoConstraints="NO" id="QoP-wS-4uW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="371"/>
+                    <animations/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLS-ik-U2s">
+                    <rect key="frame" x="126" y="391" width="68" height="67"/>
+                    <animations/>
+                    <state key="normal" image="Sweep_LightButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="Sweep_LightButtonSelect"/>
+                    <state key="highlighted" image="Sweep_LightButtonSelect"/>
+                    <connections>
+                        <action selector="openLight:" destination="-1" eventType="touchUpInside" id="Lx0-aM-k4H"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sweep_Area" translatesAutoresizingMaskIntoConstraints="NO" id="fw9-Qr-frH">
+                    <rect key="frame" x="54" y="100" width="211" height="211"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Sweep_Black" translatesAutoresizingMaskIntoConstraints="NO" id="1cW-es-PmM">
+                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="371"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Sweep_Black" translatesAutoresizingMaskIntoConstraints="NO" id="hfI-Qu-y0n">
+                    <rect key="frame" x="320" y="0.0" width="0.0" height="371"/>
+                    <animations/>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.43137254899999999" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="O6m-qT-NJn" secondAttribute="trailing" id="8Kf-xH-DkX"/>
+                <constraint firstItem="hfI-Qu-y0n" firstAttribute="height" secondItem="1cW-es-PmM" secondAttribute="height" id="GFT-Hc-qRJ"/>
+                <constraint firstItem="hfI-Qu-y0n" firstAttribute="height" secondItem="QoP-wS-4uW" secondAttribute="height" id="Hwl-Ue-Rws"/>
+                <constraint firstItem="O6m-qT-NJn" firstAttribute="top" secondItem="lLS-ik-U2s" secondAttribute="top" constant="-20" id="HyU-QP-LXt"/>
+                <constraint firstAttribute="bottom" secondItem="O6m-qT-NJn" secondAttribute="bottom" id="JNk-jb-zXv"/>
+                <constraint firstItem="fw9-Qr-frH" firstAttribute="top" secondItem="ZPd-v1-RBB" secondAttribute="top" constant="100" id="PNc-Ro-P54"/>
+                <constraint firstAttribute="centerX" secondItem="lLS-ik-U2s" secondAttribute="centerX" id="Pnz-gs-xok"/>
+                <constraint firstItem="hfI-Qu-y0n" firstAttribute="top" secondItem="ZPd-v1-RBB" secondAttribute="top" id="QzZ-W9-Hf1"/>
+                <constraint firstItem="O6m-qT-NJn" firstAttribute="top" secondItem="QoP-wS-4uW" secondAttribute="bottom" id="YcZ-wo-7Ig"/>
+                <constraint firstItem="1cW-es-PmM" firstAttribute="leading" secondItem="ZPd-v1-RBB" secondAttribute="leading" id="cOf-Cn-icd"/>
+                <constraint firstAttribute="centerX" secondItem="QoP-wS-4uW" secondAttribute="centerX" id="cmY-Kq-pYh"/>
+                <constraint firstItem="hfI-Qu-y0n" firstAttribute="leading" secondItem="QoP-wS-4uW" secondAttribute="trailing" id="eaZ-wn-ymk"/>
+                <constraint firstAttribute="centerX" secondItem="fw9-Qr-frH" secondAttribute="centerX" id="esK-hh-Bnu"/>
+                <constraint firstItem="QoP-wS-4uW" firstAttribute="leading" secondItem="1cW-es-PmM" secondAttribute="trailing" id="gwW-pE-WDa"/>
+                <constraint firstItem="O6m-qT-NJn" firstAttribute="leading" secondItem="ZPd-v1-RBB" secondAttribute="leading" id="iIK-Xq-O8C"/>
+                <constraint firstItem="QoP-wS-4uW" firstAttribute="top" secondItem="ZPd-v1-RBB" secondAttribute="top" id="kje-cn-DuH"/>
+                <constraint firstAttribute="trailing" secondItem="hfI-Qu-y0n" secondAttribute="trailing" id="pER-Ga-Si7"/>
+                <constraint firstItem="1cW-es-PmM" firstAttribute="top" secondItem="ZPd-v1-RBB" secondAttribute="top" id="vPb-LS-jRY"/>
+            </constraints>
+            <point key="canvasLocation" x="236.5" y="323.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Sweep_Area" width="211" height="211"/>
+        <image name="Sweep_BG" width="320" height="371"/>
+        <image name="Sweep_Black" width="36" height="50"/>
+        <image name="Sweep_LightButton" width="68" height="67"/>
+        <image name="Sweep_LightButtonSelect" width="68" height="67"/>
+    </resources>
+</document>

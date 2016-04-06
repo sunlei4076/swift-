@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginAccountsViewController" customModule="KoalaBusinessDistrict" customModuleProvider="target">
+            <connections>
+                <outlet property="loginOutBtn" destination="h3H-Ig-h7R" id="s7D-Vi-9bf"/>
+                <outlet property="tableFootView" destination="ESG-j5-Yam" id="G1L-Sk-Y0a"/>
+                <outlet property="tableView" destination="jNu-cK-5dU" id="CXq-pi-Jyo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="jNu-cK-5dU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="KGD-17-Uec"/>
+                        <outlet property="delegate" destination="-1" id="xSO-Kc-ZiG"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jNu-cK-5dU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ME5-UT-FRX"/>
+                <constraint firstAttribute="bottom" secondItem="jNu-cK-5dU" secondAttribute="bottom" id="NR4-lm-GSB"/>
+                <constraint firstAttribute="trailing" secondItem="jNu-cK-5dU" secondAttribute="trailing" id="TLU-Tm-eyl"/>
+                <constraint firstItem="jNu-cK-5dU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ikN-nH-hCE"/>
+            </constraints>
+            <point key="canvasLocation" x="237" y="324"/>
+        </view>
+        <view contentMode="scaleToFill" id="ESG-j5-Yam">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghg-H5-VV0">
+                    <rect key="frame" x="8" y="8" width="304" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Register_SetHeadIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5PN-gD-0Oz">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="9Nb-ue-qBp"/>
+                                <constraint firstAttribute="height" constant="60" id="ICP-06-kdk"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加账号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K36-TC-hTJ">
+                            <rect key="frame" x="68" y="19" width="68" height="21"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwG-Hm-FtU">
+                            <rect key="frame" x="0.0" y="0.0" width="304" height="60"/>
+                            <animations/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionAddAccount:" destination="-1" eventType="touchUpInside" id="ZdC-Ol-weR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="5bH-Jz-LCh"/>
+                        <constraint firstItem="YwG-Hm-FtU" firstAttribute="top" secondItem="ghg-H5-VV0" secondAttribute="top" id="L2W-2h-mHk"/>
+                        <constraint firstAttribute="trailing" secondItem="YwG-Hm-FtU" secondAttribute="trailing" id="Pfd-p7-P7A"/>
+                        <constraint firstItem="YwG-Hm-FtU" firstAttribute="leading" secondItem="ghg-H5-VV0" secondAttribute="leading" id="TDk-Jq-TFN"/>
+                        <constraint firstItem="5PN-gD-0Oz" firstAttribute="leading" secondItem="ghg-H5-VV0" secondAttribute="leading" id="U4I-YC-IxL"/>
+                        <constraint firstAttribute="centerY" secondItem="K36-TC-hTJ" secondAttribute="centerY" id="dFq-ka-cXX"/>
+                        <constraint firstAttribute="bottom" secondItem="YwG-Hm-FtU" secondAttribute="bottom" id="rSr-lk-GXr"/>
+                        <constraint firstItem="K36-TC-hTJ" firstAttribute="leading" secondItem="5PN-gD-0Oz" secondAttribute="trailing" constant="8" id="raa-xT-mXF"/>
+                        <constraint firstItem="5PN-gD-0Oz" firstAttribute="top" secondItem="ghg-H5-VV0" secondAttribute="top" id="vPN-DL-Isr"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3H-Ig-h7R">
+                    <rect key="frame" x="40" y="98" width="240" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6hE-j0-ivo"/>
+                        <constraint firstAttribute="width" constant="240" id="oMc-fQ-gC3"/>
+                    </constraints>
+                    <state key="normal" title="退 出">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionLoginOut:" destination="-1" eventType="touchUpInside" id="vMG-hN-eEB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ghg-H5-VV0" secondAttribute="trailing" constant="8" id="5nC-kw-IjL"/>
+                <constraint firstItem="h3H-Ig-h7R" firstAttribute="top" secondItem="ghg-H5-VV0" secondAttribute="bottom" constant="30" id="DGp-TR-Z8t"/>
+                <constraint firstAttribute="centerX" secondItem="h3H-Ig-h7R" secondAttribute="centerX" id="EAb-K4-Ioh"/>
+                <constraint firstItem="ghg-H5-VV0" firstAttribute="leading" secondItem="ESG-j5-Yam" secondAttribute="leading" constant="8" id="hty-Oj-Ey5"/>
+                <constraint firstItem="ghg-H5-VV0" firstAttribute="top" secondItem="ESG-j5-Yam" secondAttribute="top" constant="8" id="wqO-qf-kZK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="602" y="216"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Register_SetHeadIcon" width="63" height="63"/>
+    </resources>
+</document>

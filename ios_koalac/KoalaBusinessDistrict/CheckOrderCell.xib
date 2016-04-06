@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckOrderDetailCell" rowHeight="70" id="KGk-i7-Jjw" customClass="CheckOrderCell" customModule="KoalaBusinessDistrict" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lE8-tb-EEL">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="DXS-Li-o9R"/>
+                            <constraint firstAttribute="height" constant="60" id="vOW-ni-7SE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tn4-5i-J6l">
+                        <rect key="frame" x="80" y="30" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="v4Z-sG-e2V"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bf7-nE-FpA">
+                        <rect key="frame" x="288" y="30" width="17" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBX-sF-91O">
+                        <rect key="frame" x="250" y="26" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="4Xz-X6-obb"/>
+                            <constraint firstAttribute="height" constant="30" id="xiI-S1-hZv"/>
+                        </constraints>
+                        <state key="normal" title="-" backgroundImage="minus_icon"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="minusButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xkO-Ft-23C"/>
+                        </connections>
+                    </button>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1la-Kr-NMo">
+                        <rect key="frame" x="10" y="72" width="330" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Rfx-L1-4Jn"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7s-l9-ZWt">
+                        <rect key="frame" x="310" y="26" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="MYI-58-ZgB"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="S4O-N5-7mW"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="TuE-BT-leQ"/>
+                            <constraint firstAttribute="height" constant="30" id="pEt-jb-5jo"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="add_icon"/>
+                        <connections>
+                            <action selector="addButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Enh-sJ-PMy"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1la-Kr-NMo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="19T-O1-e9Q"/>
+                    <constraint firstItem="bf7-nE-FpA" firstAttribute="centerY" secondItem="tn4-5i-J6l" secondAttribute="centerY" id="BRa-1B-5in"/>
+                    <constraint firstAttribute="trailing" secondItem="n7s-l9-ZWt" secondAttribute="trailing" constant="10" id="CW7-1H-z0l"/>
+                    <constraint firstItem="bf7-nE-FpA" firstAttribute="leading" secondItem="OBX-sF-91O" secondAttribute="trailing" constant="8" id="Gvm-KS-JSx"/>
+                    <constraint firstItem="1la-Kr-NMo" firstAttribute="top" secondItem="lE8-tb-EEL" secondAttribute="bottom" constant="2" id="Jcl-QK-Y6O"/>
+                    <constraint firstItem="lE8-tb-EEL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="PtN-Dg-jif"/>
+                    <constraint firstItem="n7s-l9-ZWt" firstAttribute="centerY" secondItem="bf7-nE-FpA" secondAttribute="centerY" id="Uf8-ny-PaS"/>
+                    <constraint firstItem="n7s-l9-ZWt" firstAttribute="centerY" secondItem="tn4-5i-J6l" secondAttribute="centerY" id="Wxm-mR-71f"/>
+                    <constraint firstItem="OBX-sF-91O" firstAttribute="centerY" secondItem="tn4-5i-J6l" secondAttribute="centerY" id="ae8-MW-miN"/>
+                    <constraint firstItem="tn4-5i-J6l" firstAttribute="leading" secondItem="lE8-tb-EEL" secondAttribute="trailing" constant="10" id="e6S-kO-glg"/>
+                    <constraint firstAttribute="bottom" secondItem="lE8-tb-EEL" secondAttribute="bottom" constant="10" id="eHX-uu-7tH"/>
+                    <constraint firstItem="tn4-5i-J6l" firstAttribute="centerY" secondItem="lE8-tb-EEL" secondAttribute="centerY" id="gOr-aa-Dtq"/>
+                    <constraint firstItem="n7s-l9-ZWt" firstAttribute="centerY" secondItem="lE8-tb-EEL" secondAttribute="centerY" id="ga1-rG-dOf"/>
+                    <constraint firstAttribute="trailing" secondItem="1la-Kr-NMo" secondAttribute="trailing" constant="10" id="kkl-Fc-RNw"/>
+                    <constraint firstItem="n7s-l9-ZWt" firstAttribute="leading" secondItem="bf7-nE-FpA" secondAttribute="trailing" constant="5" id="oF9-Wf-sux"/>
+                    <constraint firstItem="lE8-tb-EEL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="prf-rt-dk4"/>
+                    <constraint firstItem="lE8-tb-EEL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="r95-Ou-Gf1"/>
+                    <constraint firstItem="bf7-nE-FpA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uez-U2-ny7"/>
+                    <constraint firstItem="OBX-sF-91O" firstAttribute="leading" secondItem="tn4-5i-J6l" secondAttribute="trailing" constant="10" id="wvg-Vg-ATa"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="PtN-Dg-jif"/>
+                        <exclude reference="eHX-uu-7tH"/>
+                        <exclude reference="wvg-Vg-ATa"/>
+                        <exclude reference="uez-U2-ny7"/>
+                        <exclude reference="Uf8-ny-PaS"/>
+                        <exclude reference="ga1-rG-dOf"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MinusButton" destination="OBX-sF-91O" id="TOJ-pZ-r9U"/>
+                <outlet property="addButton" destination="n7s-l9-ZWt" id="mqW-gd-C3j"/>
+                <outlet property="checkImageView" destination="tn4-5i-J6l" id="HAZ-Fo-w7p"/>
+                <outlet property="orderImageView" destination="lE8-tb-EEL" id="YFp-Qp-Bz2"/>
+                <outlet property="orderTextField" destination="bf7-nE-FpA" id="8wI-nb-R6i"/>
+            </connections>
+            <point key="canvasLocation" x="223" y="191.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_icon" width="21" height="21"/>
+        <image name="minus_icon" width="21" height="21"/>
+    </resources>
+</document>

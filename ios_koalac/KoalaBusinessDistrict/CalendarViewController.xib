@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarViewController" customModule="KoalaBusinessDistrict" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="BuQ-a9-yH1" id="4f8-co-9ut"/>
+                <outlet property="currDateLabel" destination="7q6-JC-uaX" id="exw-xJ-gn5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weeksLabelView" destination="WY9-tv-d8g" id="8b2-xg-DR7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lzo-OP-Z7G">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line_H" translatesAutoresizingMaskIntoConstraints="NO" id="3S1-TN-bnV">
+                            <rect key="frame" x="0.0" y="57" width="320" height="3"/>
+                            <animations/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppZ-2Z-d8x">
+                            <rect key="frame" x="8" y="13" width="34" height="34"/>
+                            <animations/>
+                            <state key="normal" image="Calendar_Left">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="Calendar_LeftH"/>
+                            <connections>
+                                <action selector="actionTurnLeft:" destination="-1" eventType="touchUpInside" id="DhE-dd-Bdo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaE-XN-ST8">
+                            <rect key="frame" x="278" y="13" width="34" height="34"/>
+                            <animations/>
+                            <state key="normal" image="Calendar_Right">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="Calendar_RightH"/>
+                            <connections>
+                                <action selector="actionTurnRight:" destination="-1" eventType="touchUpInside" id="htq-et-DZO"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7q6-JC-uaX">
+                            <rect key="frame" x="50" y="19" width="220" height="21"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="XaE-XN-ST8" firstAttribute="leading" secondItem="7q6-JC-uaX" secondAttribute="trailing" constant="8" id="0fS-oJ-uJ0"/>
+                        <constraint firstItem="7q6-JC-uaX" firstAttribute="leading" secondItem="ppZ-2Z-d8x" secondAttribute="trailing" constant="8" id="1H7-Ex-R4I"/>
+                        <constraint firstItem="ppZ-2Z-d8x" firstAttribute="leading" secondItem="Lzo-OP-Z7G" secondAttribute="leading" constant="8" id="3SX-c9-ikU"/>
+                        <constraint firstItem="3S1-TN-bnV" firstAttribute="leading" secondItem="Lzo-OP-Z7G" secondAttribute="leading" id="9M0-Mi-0xn"/>
+                        <constraint firstAttribute="bottom" secondItem="3S1-TN-bnV" secondAttribute="bottom" id="I28-9E-1l4"/>
+                        <constraint firstAttribute="trailing" secondItem="XaE-XN-ST8" secondAttribute="trailing" constant="8" id="N7D-UM-7RZ"/>
+                        <constraint firstAttribute="trailing" secondItem="3S1-TN-bnV" secondAttribute="trailing" id="OH1-Wg-DRA"/>
+                        <constraint firstAttribute="height" constant="60" id="Uty-7n-Uf4"/>
+                        <constraint firstItem="ppZ-2Z-d8x" firstAttribute="centerY" secondItem="7q6-JC-uaX" secondAttribute="centerY" id="cdL-DU-OFy"/>
+                        <constraint firstAttribute="centerY" secondItem="ppZ-2Z-d8x" secondAttribute="centerY" id="iP1-9v-kPV"/>
+                        <constraint firstItem="ppZ-2Z-d8x" firstAttribute="centerY" secondItem="XaE-XN-ST8" secondAttribute="centerY" id="lLe-sW-KBl"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WY9-tv-d8g">
+                    <rect key="frame" x="0.0" y="60" width="320" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHx-f3-Z64">
+                            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周一" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPN-de-Tvr">
+                            <rect key="frame" x="45" y="0.0" width="46" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周二" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STj-8X-LNN">
+                            <rect key="frame" x="91" y="0.0" width="46" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周三" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwN-Ih-zS2">
+                            <rect key="frame" x="137" y="0.0" width="46" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周四" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMS-jr-C0h">
+                            <rect key="frame" x="183" y="0.0" width="46" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周五" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvK-DE-kDy">
+                            <rect key="frame" x="228" y="0.0" width="46" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周六" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FF8-3S-OAF">
+                            <rect key="frame" x="274" y="0.0" width="46" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="CvK-DE-kDy" firstAttribute="leading" secondItem="WMS-jr-C0h" secondAttribute="trailing" id="12i-Vo-uD1"/>
+                        <constraint firstItem="FF8-3S-OAF" firstAttribute="top" secondItem="WY9-tv-d8g" secondAttribute="top" id="20O-PP-L78"/>
+                        <constraint firstItem="CHx-f3-Z64" firstAttribute="leading" secondItem="WY9-tv-d8g" secondAttribute="leading" id="26F-IO-P7i"/>
+                        <constraint firstItem="CHx-f3-Z64" firstAttribute="top" secondItem="WY9-tv-d8g" secondAttribute="top" id="3SH-2P-U1g"/>
+                        <constraint firstItem="uPN-de-Tvr" firstAttribute="width" secondItem="WMS-jr-C0h" secondAttribute="width" id="3lf-Vg-Xvx"/>
+                        <constraint firstAttribute="height" constant="30" id="4Pv-gM-2nb"/>
+                        <constraint firstItem="uPN-de-Tvr" firstAttribute="width" secondItem="CHx-f3-Z64" secondAttribute="width" id="Id2-HE-EOA"/>
+                        <constraint firstAttribute="bottom" secondItem="CHx-f3-Z64" secondAttribute="bottom" id="J2e-l6-vkW"/>
+                        <constraint firstItem="STj-8X-LNN" firstAttribute="top" secondItem="WY9-tv-d8g" secondAttribute="top" id="KDJ-Bw-15x"/>
+                        <constraint firstAttribute="bottom" secondItem="FF8-3S-OAF" secondAttribute="bottom" id="P3w-WM-Piw"/>
+                        <constraint firstAttribute="bottom" secondItem="CvK-DE-kDy" secondAttribute="bottom" id="VaG-fb-GYm"/>
+                        <constraint firstAttribute="bottom" secondItem="uPN-de-Tvr" secondAttribute="bottom" id="XPT-Oe-oay"/>
+                        <constraint firstItem="uPN-de-Tvr" firstAttribute="width" secondItem="STj-8X-LNN" secondAttribute="width" id="aRs-74-ZNo"/>
+                        <constraint firstItem="WMS-jr-C0h" firstAttribute="top" secondItem="WY9-tv-d8g" secondAttribute="top" id="adO-bC-7fB"/>
+                        <constraint firstItem="uwN-Ih-zS2" firstAttribute="leading" secondItem="STj-8X-LNN" secondAttribute="trailing" id="bry-Aw-UtG"/>
+                        <constraint firstItem="uPN-de-Tvr" firstAttribute="width" secondItem="FF8-3S-OAF" secondAttribute="width" id="dF8-6e-Tsl"/>
+                        <constraint firstAttribute="bottom" secondItem="WMS-jr-C0h" secondAttribute="bottom" id="eDJ-la-TzK"/>
+                        <constraint firstItem="uPN-de-Tvr" firstAttribute="leading" secondItem="CHx-f3-Z64" secondAttribute="trailing" id="eiR-kf-Qk6"/>
+                        <constraint firstItem="CvK-DE-kDy" firstAttribute="top" secondItem="WY9-tv-d8g" secondAttribute="top" id="hOl-3y-bn0"/>
+                        <constraint firstItem="uPN-de-Tvr" firstAttribute="width" secondItem="uwN-Ih-zS2" secondAttribute="width" id="k9N-rz-3GU"/>
+                        <constraint firstItem="STj-8X-LNN" firstAttribute="leading" secondItem="uPN-de-Tvr" secondAttribute="trailing" id="kBN-0V-riL"/>
+                        <constraint firstAttribute="trailing" secondItem="FF8-3S-OAF" secondAttribute="trailing" id="lel-IV-ZQb"/>
+                        <constraint firstItem="FF8-3S-OAF" firstAttribute="leading" secondItem="CvK-DE-kDy" secondAttribute="trailing" id="nCy-zw-Jcp"/>
+                        <constraint firstItem="uwN-Ih-zS2" firstAttribute="top" secondItem="WY9-tv-d8g" secondAttribute="top" id="oP5-J9-AUS"/>
+                        <constraint firstAttribute="bottom" secondItem="uwN-Ih-zS2" secondAttribute="bottom" id="rjZ-5z-n6A"/>
+                        <constraint firstItem="WMS-jr-C0h" firstAttribute="leading" secondItem="uwN-Ih-zS2" secondAttribute="trailing" id="su5-Je-tiB"/>
+                        <constraint firstItem="uPN-de-Tvr" firstAttribute="top" secondItem="WY9-tv-d8g" secondAttribute="top" id="u7f-Tf-F92"/>
+                        <constraint firstAttribute="bottom" secondItem="STj-8X-LNN" secondAttribute="bottom" id="x8Q-WB-gs8"/>
+                        <constraint firstItem="uPN-de-Tvr" firstAttribute="width" secondItem="CvK-DE-kDy" secondAttribute="width" id="yXM-xp-cWL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BuQ-a9-yH1">
+                    <rect key="frame" x="0.0" y="90" width="320" height="478"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Lzo-OP-Z7G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6Ug-Pi-pgw"/>
+                <constraint firstItem="BuQ-a9-yH1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6jA-Zi-rMO"/>
+                <constraint firstAttribute="trailing" secondItem="Lzo-OP-Z7G" secondAttribute="trailing" id="M2A-yk-st1"/>
+                <constraint firstItem="Lzo-OP-Z7G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="W0F-1o-3Vn"/>
+                <constraint firstAttribute="trailing" secondItem="WY9-tv-d8g" secondAttribute="trailing" id="eMY-gl-ogr"/>
+                <constraint firstAttribute="trailing" secondItem="BuQ-a9-yH1" secondAttribute="trailing" id="fdb-MN-Isp"/>
+                <constraint firstAttribute="bottom" secondItem="BuQ-a9-yH1" secondAttribute="bottom" id="gqZ-4Q-ijm"/>
+                <constraint firstItem="WY9-tv-d8g" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="r9S-80-KWt"/>
+                <constraint firstItem="WY9-tv-d8g" firstAttribute="top" secondItem="Lzo-OP-Z7G" secondAttribute="bottom" id="wOL-Px-bsX"/>
+                <constraint firstItem="BuQ-a9-yH1" firstAttribute="top" secondItem="WY9-tv-d8g" secondAttribute="bottom" id="zT0-Df-cZA"/>
+            </constraints>
+            <point key="canvasLocation" x="316" y="324"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Calendar_Left" width="34" height="34"/>
+        <image name="Calendar_LeftH" width="34" height="34"/>
+        <image name="Calendar_Right" width="34" height="34"/>
+        <image name="Calendar_RightH" width="34" height="34"/>
+        <image name="Line_H" width="600" height="3"/>
+    </resources>
+</document>

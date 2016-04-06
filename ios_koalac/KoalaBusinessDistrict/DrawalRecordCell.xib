@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DrawalRecordCell" id="KGk-i7-Jjw" customClass="DrawalRecordCell" customModule="KoalaBusinessDistrict" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEi-gU-WBM">
+                        <rect key="frame" x="263" y="29" width="42" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lso-fU-VxH">
+                        <rect key="frame" x="15" y="15" width="240" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar3-e6-SP3">
+                        <rect key="frame" x="15" y="44" width="240" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ar3-e6-SP3" secondAttribute="bottom" constant="15" id="0DU-vk-0fd"/>
+                    <constraint firstItem="ar3-e6-SP3" firstAttribute="leading" secondItem="Lso-fU-VxH" secondAttribute="leading" id="Agx-fT-pF2"/>
+                    <constraint firstAttribute="centerY" secondItem="JEi-gU-WBM" secondAttribute="centerY" id="Dp9-Wq-8PY"/>
+                    <constraint firstItem="Lso-fU-VxH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="QJG-Da-M7p"/>
+                    <constraint firstItem="Lso-fU-VxH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="QV2-dV-uzj"/>
+                    <constraint firstItem="JEi-gU-WBM" firstAttribute="leading" secondItem="Lso-fU-VxH" secondAttribute="trailing" constant="8" id="Vj7-Tb-Qki"/>
+                    <constraint firstItem="JEi-gU-WBM" firstAttribute="leading" secondItem="ar3-e6-SP3" secondAttribute="trailing" constant="8" id="nZi-Z6-VIo"/>
+                    <constraint firstAttribute="trailing" secondItem="JEi-gU-WBM" secondAttribute="trailing" constant="15" id="rsR-eH-rLT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="showCardInfoLabel" destination="Lso-fU-VxH" id="dnX-Pw-ElF"/>
+                <outlet property="showMoneyNumLabel" destination="JEi-gU-WBM" id="cVx-Su-ERf"/>
+                <outlet property="showTimeLabel" destination="ar3-e6-SP3" id="6hW-3N-zkK"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

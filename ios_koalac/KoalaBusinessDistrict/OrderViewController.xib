@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderViewController" customModule="KoalaBusinessDistrict" customModuleProvider="target">
+            <connections>
+                <outlet property="fourButton" destination="Joy-iC-biA" id="SUc-jT-8OF"/>
+                <outlet property="oneButton" destination="wjD-NR-ocz" id="ohf-Rm-ciw"/>
+                <outlet property="selectedFlagView" destination="wFu-tS-EjP" id="BqQ-hk-DZe"/>
+                <outlet property="tableView" destination="zG2-oZ-Bcq" id="s0b-NJ-aNK"/>
+                <outlet property="threeButton" destination="7pU-pm-GXC" id="r3Z-cA-n6e"/>
+                <outlet property="twoButton" destination="CoH-1J-1jN" id="nuc-uk-w6S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTm-73-k5Q">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3F-Is-Geo">
+                            <rect key="frame" x="0.0" y="44" width="320" height="2"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFu-tS-EjP">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="2"/>
+                                    <animations/>
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="Ahf-Je-1RJ"/>
+                                <constraint firstItem="wFu-tS-EjP" firstAttribute="top" secondItem="w3F-Is-Geo" secondAttribute="top" id="GsF-u1-pX3"/>
+                                <constraint firstAttribute="bottom" secondItem="wFu-tS-EjP" secondAttribute="bottom" id="Pwh-eX-n0b"/>
+                                <constraint firstItem="wFu-tS-EjP" firstAttribute="leading" secondItem="w3F-Is-Geo" secondAttribute="leading" id="a8x-4n-mzM"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoH-1J-1jN">
+                            <rect key="frame" x="80" y="0.0" width="80" height="44"/>
+                            <animations/>
+                            <state key="normal" title="待退货"/>
+                            <connections>
+                                <action selector="twoButtonAction:" destination="-1" eventType="touchUpInside" id="M1M-lq-SRd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pU-pm-GXC">
+                            <rect key="frame" x="160" y="0.0" width="80" height="44"/>
+                            <animations/>
+                            <state key="normal" title="已发货"/>
+                            <connections>
+                                <action selector="threeButtonAction:" destination="-1" eventType="touchUpInside" id="yo7-XG-n0A"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Joy-iC-biA">
+                            <rect key="frame" x="240" y="0.0" width="80" height="44"/>
+                            <animations/>
+                            <state key="normal" title="已取消"/>
+                            <connections>
+                                <action selector="fourButtonAction:" destination="-1" eventType="touchUpInside" id="9i0-RG-gz5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjD-NR-ocz">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
+                            <animations/>
+                            <state key="normal" title="未发货"/>
+                            <connections>
+                                <action selector="oneButtonAction:" destination="-1" eventType="touchUpInside" id="ps7-Ul-ekD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Joy-iC-biA" firstAttribute="leading" secondItem="7pU-pm-GXC" secondAttribute="trailing" id="194-WI-Sh3"/>
+                        <constraint firstItem="w3F-Is-Geo" firstAttribute="top" secondItem="CoH-1J-1jN" secondAttribute="bottom" id="20t-m9-f2D"/>
+                        <constraint firstItem="CoH-1J-1jN" firstAttribute="top" secondItem="bTm-73-k5Q" secondAttribute="top" id="40P-lB-i99"/>
+                        <constraint firstItem="7pU-pm-GXC" firstAttribute="leading" secondItem="CoH-1J-1jN" secondAttribute="trailing" id="8dI-Kt-QpU"/>
+                        <constraint firstItem="Joy-iC-biA" firstAttribute="top" secondItem="bTm-73-k5Q" secondAttribute="top" id="B0h-0P-f0G"/>
+                        <constraint firstAttribute="bottom" secondItem="w3F-Is-Geo" secondAttribute="bottom" id="Evq-ox-3v0"/>
+                        <constraint firstAttribute="height" constant="46" id="GG7-qE-xEh"/>
+                        <constraint firstItem="w3F-Is-Geo" firstAttribute="leading" secondItem="bTm-73-k5Q" secondAttribute="leading" id="GkD-pk-Zuv"/>
+                        <constraint firstItem="7pU-pm-GXC" firstAttribute="width" secondItem="wjD-NR-ocz" secondAttribute="width" id="HUC-Dt-5Kv"/>
+                        <constraint firstItem="w3F-Is-Geo" firstAttribute="top" secondItem="Joy-iC-biA" secondAttribute="bottom" id="HUp-ec-v8G"/>
+                        <constraint firstItem="wFu-tS-EjP" firstAttribute="width" secondItem="wjD-NR-ocz" secondAttribute="width" id="LKE-zX-L1e"/>
+                        <constraint firstItem="CoH-1J-1jN" firstAttribute="leading" secondItem="wjD-NR-ocz" secondAttribute="trailing" id="RQt-GK-7X3"/>
+                        <constraint firstAttribute="trailing" secondItem="w3F-Is-Geo" secondAttribute="trailing" id="bL7-8H-nDM"/>
+                        <constraint firstItem="7pU-pm-GXC" firstAttribute="top" secondItem="bTm-73-k5Q" secondAttribute="top" id="hRx-0T-eyV"/>
+                        <constraint firstItem="wjD-NR-ocz" firstAttribute="top" secondItem="bTm-73-k5Q" secondAttribute="top" id="i36-lA-HJx"/>
+                        <constraint firstItem="Joy-iC-biA" firstAttribute="width" secondItem="wjD-NR-ocz" secondAttribute="width" id="kGG-Mg-yT1"/>
+                        <constraint firstItem="w3F-Is-Geo" firstAttribute="top" secondItem="wjD-NR-ocz" secondAttribute="bottom" id="oBf-b5-QXl"/>
+                        <constraint firstAttribute="trailing" secondItem="Joy-iC-biA" secondAttribute="trailing" id="tBB-qV-ghh"/>
+                        <constraint firstItem="w3F-Is-Geo" firstAttribute="top" secondItem="7pU-pm-GXC" secondAttribute="bottom" id="tjt-yc-SIh"/>
+                        <constraint firstItem="CoH-1J-1jN" firstAttribute="width" secondItem="wjD-NR-ocz" secondAttribute="width" id="wZJ-6r-8f9"/>
+                        <constraint firstItem="wjD-NR-ocz" firstAttribute="leading" secondItem="bTm-73-k5Q" secondAttribute="leading" id="yNG-j8-bec"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zG2-oZ-Bcq">
+                    <rect key="frame" x="0.0" y="46" width="320" height="522"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="stt-Nh-DCt"/>
+                        <outlet property="delegate" destination="-1" id="5Eq-hO-fnW"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bTm-73-k5Q" secondAttribute="trailing" id="0tj-hj-TKI"/>
+                <constraint firstItem="zG2-oZ-Bcq" firstAttribute="top" secondItem="bTm-73-k5Q" secondAttribute="bottom" id="1mk-qb-v6V"/>
+                <constraint firstItem="bTm-73-k5Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2fh-N4-LFS"/>
+                <constraint firstItem="bTm-73-k5Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Sgz-Wz-f8t"/>
+                <constraint firstItem="zG2-oZ-Bcq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iOb-Mx-tpt"/>
+                <constraint firstAttribute="bottom" secondItem="zG2-oZ-Bcq" secondAttribute="bottom" id="tMe-yr-XM2"/>
+                <constraint firstAttribute="trailing" secondItem="zG2-oZ-Bcq" secondAttribute="trailing" id="zZT-Ls-UV3"/>
+            </constraints>
+            <point key="canvasLocation" x="247" y="400"/>
+        </view>
+    </objects>
+</document>

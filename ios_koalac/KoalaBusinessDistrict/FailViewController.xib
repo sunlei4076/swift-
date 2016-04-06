@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FailViewController" customModule="KoalaBusinessDistrict" customModuleProvider="target">
+            <connections>
+                <outlet property="failTipLabel" destination="LnP-PO-yk7" id="tgC-I4-5sU"/>
+                <outlet property="okBtn" destination="Ceu-EL-6Zn" id="WOx-Jh-jjT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2f-M9-yEG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wd_Fail" translatesAutoresizingMaskIntoConstraints="NO" id="Gnj-rd-JAO">
+                            <rect key="frame" x="131" y="60" width="58" height="59"/>
+                            <animations/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提现申请提交失败" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnP-PO-yk7">
+                            <rect key="frame" x="92" y="127" width="136" height="21"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="Gnj-rd-JAO" secondAttribute="centerX" id="OIb-SB-FDH"/>
+                        <constraint firstAttribute="centerY" secondItem="Gnj-rd-JAO" secondAttribute="centerY" id="bs2-z4-fQG"/>
+                        <constraint firstAttribute="height" constant="180" id="dYM-uA-aVf"/>
+                        <constraint firstAttribute="centerX" secondItem="LnP-PO-yk7" secondAttribute="centerX" id="j44-i0-pPY"/>
+                        <constraint firstItem="LnP-PO-yk7" firstAttribute="top" secondItem="Gnj-rd-JAO" secondAttribute="bottom" constant="8" id="zYb-aL-qMM"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceu-EL-6Zn">
+                    <rect key="frame" x="40" y="210" width="240" height="40"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.26274509800000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BuN-zY-FAg"/>
+                        <constraint firstAttribute="width" constant="240" id="tqx-NE-VKO"/>
+                    </constraints>
+                    <state key="normal" title="重试">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionOk:" destination="-1" eventType="touchUpInside" id="lLZ-AU-M8b"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="g2f-M9-yEG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6hf-LN-jIA"/>
+                <constraint firstItem="g2f-M9-yEG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HOg-Yg-oYl"/>
+                <constraint firstItem="Ceu-EL-6Zn" firstAttribute="top" secondItem="g2f-M9-yEG" secondAttribute="bottom" constant="30" id="NEF-kA-Rje"/>
+                <constraint firstAttribute="trailing" secondItem="g2f-M9-yEG" secondAttribute="trailing" id="P5K-Mh-biU"/>
+                <constraint firstAttribute="centerX" secondItem="Ceu-EL-6Zn" secondAttribute="centerX" id="l5v-xM-dHb"/>
+            </constraints>
+            <point key="canvasLocation" x="237" y="324"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Wd_Fail" width="58" height="59"/>
+    </resources>
+</document>
